@@ -1,9 +1,17 @@
-import styles from './Cabecalho.module.css'
+/* eslint-disable prettier/prettier */
+import styled from 'styled-components'
+
+const Header = styled.header`
+  background-color: var(--cor-secundaria);
+  color: var(--cor-principal);
+  text-align: center;
+  padding: 24px 0;
+`
 
 const Cabecalho = () => (
-  <header className={styles.cabecalho}>
+  <Header>
     <h1>EBAC Jobs</h1>
-  </header>
+  </Header>
 )
 
 export default Cabecalho
